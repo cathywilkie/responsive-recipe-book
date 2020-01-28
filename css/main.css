@@ -1,0 +1,149 @@
+:root {
+  --primary-color: #b82e28;
+  --secondary-color: #f5f3f2;
+  --font-primary: freight-sans-pro,sans-serif;
+  --font-secondary: freight-neo-pro, sans-serif;
+  --font-secondary-text: adobe-garamond-pro, serif;
+}
+
+html {
+  font-family: var(--font-secondary-text);
+}
+
+.logo {
+  display: block;
+  font-family: freight-neo-pro,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  color: #b82e28;
+}
+
+.navigation-btn {
+  font-family: freight-sans-pro,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: var(--primary-color);
+  margin: 0 .5em;
+}
+
+.navigation-btn:hover {
+  border-bottom: 2px solid #b82e28;
+}
+
+.footer-btn {
+  color: var(--secondary-color);
+  font-family: freight-sans-pro,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  margin: 0 .5em;
+}
+
+.footer-btn:hover {
+  border-bottom: 2px solid #f5f3f2;
+}
+
+/* The code below changes the navigation button colour to show the user what page they are on */
+.current {
+  background-color: #333;
+  border-color: #333;
+  color: #fff;
+}
+
+/*
+
+font family
+
+font-family: adobe-garamond-pro,serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: freight-neo-pro,sans-serif;
+font-weight: 700;
+font-style: normal;
+
+font-family: freight-sans-pro,sans-serif;
+font-weight: 400;
+font-style: normal;
+
+*/
+
+.current:focus,
+.current:hover,
+.btn-ghost:focus,
+.btn-ghost:hover {
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+}
+
+h1 {
+  color: var(--primary-color);
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-style: normal;
+  line-height: 110%;
+}
+
+.banner-text {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  line-height: 120%;
+  color: var(--primary-color);
+}
+
+.banner-carousel {
+  background-color: #f5f3f2;
+}
+
+.section-recipe {
+  background-color: var(--secondary-color);
+}
+
+.beige {
+  background-color: var(--secondary-color);
+}
+
+.card,
+.large-card {
+  position: relative;
+  min-height: 12rem;
+  border: 2.45px solid var(--primary-color);
+  border-radius: 2px;
+  text-decoration: none;
+  font-family: var(--font-secondary);
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.border-recipe {
+  border-bottom: 3px solid var(--primary-color);
+  width: 2.5em;
+}
+
+.card:focus,
+.card:hover,
+.large-card:focus,
+.large-card:hover {
+
+}
+
+footer {
+  background-color: var(--primary-color);
+}
+
+@media only screen and (min-width: 38em) {
+
+  /* The code below pushes the logo to left of the screen at larger sizes */
+  .logo {
+    margin: 0;
+  }
+
+  /* The code below makes the navigation buttons go to the right at larger screen sizes */
+  .big-right {
+    text-align: right;
+  }
+
+}
